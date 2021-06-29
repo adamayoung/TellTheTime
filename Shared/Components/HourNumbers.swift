@@ -5,7 +5,7 @@ struct HourNumbers: View {
     private static let hours = 1..<13
 
     var body: some View {
-        ForEach(Self.hours) { hour in
+        ForEach(Self.hours, id: \.self) { hour in
             Text("\(hour)")
                 .modifier(PositionInCircle(
                     angle: .degrees(Double(hour) * .hourInDegree),

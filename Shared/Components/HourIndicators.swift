@@ -5,7 +5,7 @@ struct HourIndicators: View {
     private static let hours = 1..<13
 
     var body: some View {
-        ForEach(Self.hours) { hour in
+        ForEach(Self.hours, id: \.self) { hour in
             Rectangle()
                 .frame(width: 5, height: 30)
                 .rotationEffect(.degrees(Double(hour) * .hourInDegree))
