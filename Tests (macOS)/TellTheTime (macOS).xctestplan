@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "52E2A8F9-D70B-4962-B446-F3C14E64D05E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TellTheTime.xcodeproj",
+      "identifier" : "494FFCC5268A244E00DD957B",
+      "name" : "TellTheTime (macOS)"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TellTheTime.xcodeproj",
+        "identifier" : "4937043C268B098400FFD061",
+        "name" : "Tests (macOS)"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49370431268B05BC00FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370430268B05BC00FFD061 /* TellTheTimeTests.swift */; };
+		49370440268B098400FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937043F268B098400FFD061 /* TellTheTimeTests.swift */; };
+		4937044A268B0B4A00FFD061 /* IOSAppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370449268B0B4A00FFD061 /* IOSAppScene.swift */; };
+		4937044C268B0B9700FFD061 /* MacAppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937044B268B0B9700FFD061 /* MacAppScene.swift */; };
+		49422160268A515100137668 /* HourNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942215F268A515100137668 /* HourNumbers.swift */; };
+		49422161268A515100137668 /* HourNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942215F268A515100137668 /* HourNumbers.swift */; };
+		494FFCCA268A244E00DD957B /* TellTheTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCB7268A244B00DD957B /* TellTheTimeApp.swift */; };
+		494FFCCB268A244E00DD957B /* TellTheTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCB7268A244B00DD957B /* TellTheTimeApp.swift */; };
+		494FFCCC268A244E00DD957B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCB8268A244B00DD957B /* ContentView.swift */; };
+		494FFCCD268A244E00DD957B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCB8268A244B00DD957B /* ContentView.swift */; };
+		494FFCCE268A244E00DD957B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FFCB9268A244E00DD957B /* Assets.xcassets */; };
+		494FFCCF268A244E00DD957B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FFCB9268A244E00DD957B /* Assets.xcassets */; };
+		494FFCDA268A246F00DD957B /* ClockOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCD9268A246F00DD957B /* ClockOutline.swift */; };
+		494FFCDB268A274E00DD957B /* ClockOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCD9268A246F00DD957B /* ClockOutline.swift */; };
+		494FFCDE268A276700DD957B /* HourIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCDD268A276700DD957B /* HourIndicators.swift */; };
+		494FFCDF268A276A00DD957B /* HourIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCDD268A276700DD957B /* HourIndicators.swift */; };
+		494FFCE2268A27B900DD957B /* GeometryReader+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE1268A27B900DD957B /* GeometryReader+Extensions.swift */; };
+		494FFCE5268A283C00DD957B /* PositionInCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE4268A283C00DD957B /* PositionInCircle.swift */; };
+		494FFCE6268A284100DD957B /* PositionInCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE4268A283C00DD957B /* PositionInCircle.swift */; };
+		494FFCE8268A286000DD957B /* CGPoint+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE7268A286000DD957B /* CGPoint+Circle.swift */; };
+		494FFCEA268A287F00DD957B /* CGRect+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE9268A287F00DD957B /* CGRect+Circle.swift */; };
+		494FFCEB268A287F00DD957B /* CGRect+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE9268A287F00DD957B /* CGRect+Circle.swift */; };
+		494FFCED268A28C300DD957B /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEC268A28C200DD957B /* Double+Time.swift */; };
+		494FFCEE268A28C300DD957B /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEC268A28C200DD957B /* Double+Time.swift */; };
+		494FFCF0268A290700DD957B /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* ClockFace.swift */; };
+		494FFCF1268A290700DD957B /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* ClockFace.swift */; };
+		494FFCF3268A297D00DD957B /* MinuteIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF2268A297D00DD957B /* MinuteIndicators.swift */; };
+		494FFCF4268A297D00DD957B /* MinuteIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF2268A297D00DD957B /* MinuteIndicators.swift */; };
+		494FFCF6268A38FC00DD957B /* ClockArmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF5268A38FC00DD957B /* ClockArmType.swift */; };
+		494FFCF7268A38FC00DD957B /* ClockArmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF5268A38FC00DD957B /* ClockArmType.swift */; };
+		494FFCF9268A393A00DD957B /* Date+Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF8268A393A00DD957B /* Date+Clock.swift */; };
+		494FFCFA268A393A00DD957B /* Date+Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF8268A393A00DD957B /* Date+Clock.swift */; };
+		494FFCFC268A39CB00DD957B /* ClockArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCFB268A39CB00DD957B /* ClockArm.swift */; };
+		494FFCFD268A39CB00DD957B /* ClockArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCFB268A39CB00DD957B /* ClockArm.swift */; };
+		494FFD00268A3ADB00DD957B /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCFF268A3ADB00DD957B /* ClockHand.swift */; };
+		494FFD01268A3ADB00DD957B /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCFF268A3ADB00DD957B /* ClockHand.swift */; };
+		494FFD05268A3F9500DD957B /* GeometryReader+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE1268A27B900DD957B /* GeometryReader+Extensions.swift */; };
+		494FFD06268A3F9800DD957B /* CGPoint+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE7268A286000DD957B /* CGPoint+Circle.swift */; };
+		499992A7268A51A800F0D49C /* FontProportional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992A6268A51A800F0D49C /* FontProportional.swift */; };
+		499992A8268A51A800F0D49C /* FontProportional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992A6268A51A800F0D49C /* FontProportional.swift */; };
+		499992AA268A52C500F0D49C /* ArmDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992A9268A52C500F0D49C /* ArmDragGesture.swift */; };
+		499992AB268A52C500F0D49C /* ArmDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992A9268A52C500F0D49C /* ArmDragGesture.swift */; };
+		499992AD268A5FA500F0D49C /* MinuteGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992AC268A5FA500F0D49C /* MinuteGuide.swift */; };
+		499992AE268A5FA500F0D49C /* MinuteGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992AC268A5FA500F0D49C /* MinuteGuide.swift */; };
+		499992B0268A64E900F0D49C /* MinuteGuideNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992AF268A64E900F0D49C /* MinuteGuideNumbers.swift */; };
+		499992B1268A64E900F0D49C /* MinuteGuideNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992AF268A64E900F0D49C /* MinuteGuideNumbers.swift */; };
+		499992B3268A682200F0D49C /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992B2268A682200F0D49C /* DigitalClock.swift */; };
+		499992B4268A682200F0D49C /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992B2268A682200F0D49C /* DigitalClock.swift */; };
+		499992B6268A6CA700F0D49C /* Date+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992B5268A6CA700F0D49C /* Date+Random.swift */; };
+		499992B7268A6CA700F0D49C /* Date+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992B5268A6CA700F0D49C /* Date+Random.swift */; };
+		499992BB268A6F5100F0D49C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992BA268A6F5100F0D49C /* AppModel.swift */; };
+		499992BC268A6F5100F0D49C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992BA268A6F5100F0D49C /* AppModel.swift */; };
+		499992BF268A703600F0D49C /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992BE268A703600F0D49C /* SpeechService.swift */; };
+		499992C0268A703600F0D49C /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992BE268A703600F0D49C /* SpeechService.swift */; };
+		499992C3268A752B00F0D49C /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992C2268A752B00F0D49C /* ClockView.swift */; };
+		499992C4268A752B00F0D49C /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992C2268A752B00F0D49C /* ClockView.swift */; };
+		499992C7268A758C00F0D49C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992C6268A758C00F0D49C /* SettingsView.swift */; };
+		499992C8268A758C00F0D49C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499992C6268A758C00F0D49C /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49370433268B05BC00FFD061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494FFCB2268A244B00DD957B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494FFCBD268A244E00DD957B;
+			remoteInfo = "TellTheTime (iOS)";
+		};
+		49370442268B098400FFD061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494FFCB2268A244B00DD957B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494FFCC5268A244E00DD957B;
+			remoteInfo = "TellTheTime (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4937042E268B05BC00FFD061 /* Tests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49370430268B05BC00FFD061 /* TellTheTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeTests.swift; sourceTree = "<group>"; };
+		49370432268B05BC00FFD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4937043D268B098400FFD061 /* Tests (macOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests (macOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4937043F268B098400FFD061 /* TellTheTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeTests.swift; sourceTree = "<group>"; };
+		49370441268B098400FFD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49370447268B09FB00FFD061 /* TellTheTime (iOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TellTheTime (iOS).xctestplan"; path = "Tests (iOS)/TellTheTime (iOS).xctestplan"; sourceTree = SOURCE_ROOT; };
+		49370448268B0A1500FFD061 /* TellTheTime (macOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TellTheTime (macOS).xctestplan"; sourceTree = "<group>"; };
+		49370449268B0B4A00FFD061 /* IOSAppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppScene.swift; sourceTree = "<group>"; };
+		4937044B268B0B9700FFD061 /* MacAppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppScene.swift; sourceTree = "<group>"; };
+		4942215F268A515100137668 /* HourNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourNumbers.swift; sourceTree = "<group>"; };
+		494FFCB7268A244B00DD957B /* TellTheTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeApp.swift; sourceTree = "<group>"; };
+		494FFCB8268A244B00DD957B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		494FFCB9268A244E00DD957B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		494FFCBE268A244E00DD957B /* TellTheTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellTheTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494FFCC1268A244E00DD957B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494FFCC6268A244E00DD957B /* Tell the Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tell the Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		494FFCC8268A244E00DD957B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494FFCC9268A244E00DD957B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		494FFCD9268A246F00DD957B /* ClockOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockOutline.swift; sourceTree = "<group>"; };
+		494FFCDD268A276700DD957B /* HourIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourIndicators.swift; sourceTree = "<group>"; };
+		494FFCE1268A27B900DD957B /* GeometryReader+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryReader+Extensions.swift"; sourceTree = "<group>"; };
+		494FFCE4268A283C00DD957B /* PositionInCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInCircle.swift; sourceTree = "<group>"; };
+		494FFCE7268A286000DD957B /* CGPoint+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Circle.swift"; sourceTree = "<group>"; };
+		494FFCE9268A287F00DD957B /* CGRect+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Circle.swift"; sourceTree = "<group>"; };
+		494FFCEC268A28C200DD957B /* Double+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
+		494FFCEF268A290700DD957B /* ClockFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFace.swift; sourceTree = "<group>"; };
+		494FFCF2268A297D00DD957B /* MinuteIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteIndicators.swift; sourceTree = "<group>"; };
+		494FFCF5268A38FC00DD957B /* ClockArmType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockArmType.swift; sourceTree = "<group>"; };
+		494FFCF8268A393A00DD957B /* Date+Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Clock.swift"; sourceTree = "<group>"; };
+		494FFCFB268A39CB00DD957B /* ClockArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockArm.swift; sourceTree = "<group>"; };
+		494FFCFF268A3ADB00DD957B /* ClockHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHand.swift; sourceTree = "<group>"; };
+		499992A6268A51A800F0D49C /* FontProportional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontProportional.swift; sourceTree = "<group>"; };
+		499992A9268A52C500F0D49C /* ArmDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmDragGesture.swift; sourceTree = "<group>"; };
+		499992AC268A5FA500F0D49C /* MinuteGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteGuide.swift; sourceTree = "<group>"; };
+		499992AF268A64E900F0D49C /* MinuteGuideNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteGuideNumbers.swift; sourceTree = "<group>"; };
+		499992B2268A682200F0D49C /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
+		499992B5268A6CA700F0D49C /* Date+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Random.swift"; sourceTree = "<group>"; };
+		499992BA268A6F5100F0D49C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		499992BE268A703600F0D49C /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		499992C2268A752B00F0D49C /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		499992C6268A758C00F0D49C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4937042B268B05BC00FFD061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4937043A268B098400FFD061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCBB268A244E00DD957B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCC3268A244E00DD957B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4937042F268B05BC00FFD061 /* Tests (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				49370430268B05BC00FFD061 /* TellTheTimeTests.swift */,
+				49370447268B09FB00FFD061 /* TellTheTime (iOS).xctestplan */,
+				49370432268B05BC00FFD061 /* Info.plist */,
+			);
+			path = "Tests (iOS)";
+			sourceTree = "<group>";
+		};
+		49370438268B08FB00FFD061 /* Tests Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tests Shared";
+			sourceTree = "<group>";
+		};
+		4937043E268B098400FFD061 /* Tests (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				4937043F268B098400FFD061 /* TellTheTimeTests.swift */,
+				49370448268B0A1500FFD061 /* TellTheTime (macOS).xctestplan */,
+				49370441268B098400FFD061 /* Info.plist */,
+			);
+			path = "Tests (macOS)";
+			sourceTree = "<group>";
+		};
+		494FFCB1268A244B00DD957B = {
+			isa = PBXGroup;
+			children = (
+				494FFCB6268A244B00DD957B /* Shared */,
+				494FFCC0268A244E00DD957B /* iOS */,
+				494FFCC7268A244E00DD957B /* macOS */,
+				49370438268B08FB00FFD061 /* Tests Shared */,
+				4937042F268B05BC00FFD061 /* Tests (iOS) */,
+				4937043E268B098400FFD061 /* Tests (macOS) */,
+				494FFCBF268A244E00DD957B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494FFCB6268A244B00DD957B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCB7268A244B00DD957B /* TellTheTimeApp.swift */,
+				499992B8268A6F3A00F0D49C /* Model */,
+				499992B9268A6F4200F0D49C /* Navigation */,
+				499992C1268A750D00F0D49C /* Clock */,
+				499992C5268A757D00F0D49C /* Settings */,
+				494FFCD8268A245F00DD957B /* Components */,
+				494FFCFE268A3AC000DD957B /* Shapes */,
+				494FFCE3268A282A00DD957B /* ViewModifiers */,
+				494FFCE0268A27A400DD957B /* Extensions */,
+				499992BD268A702800F0D49C /* Services */,
+				494FFCB9268A244E00DD957B /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		494FFCBF268A244E00DD957B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCBE268A244E00DD957B /* TellTheTime.app */,
+				494FFCC6268A244E00DD957B /* Tell the Time.app */,
+				4937042E268B05BC00FFD061 /* Tests (iOS).xctest */,
+				4937043D268B098400FFD061 /* Tests (macOS).xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494FFCC0268A244E00DD957B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				49370449268B0B4A00FFD061 /* IOSAppScene.swift */,
+				494FFCC1268A244E00DD957B /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		494FFCC7268A244E00DD957B /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4937044B268B0B9700FFD061 /* MacAppScene.swift */,
+				494FFCC8268A244E00DD957B /* Info.plist */,
+				494FFCC9268A244E00DD957B /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		494FFCD8268A245F00DD957B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCEF268A290700DD957B /* ClockFace.swift */,
+				494FFCD9268A246F00DD957B /* ClockOutline.swift */,
+				494FFCDD268A276700DD957B /* HourIndicators.swift */,
+				4942215F268A515100137668 /* HourNumbers.swift */,
+				494FFCF2268A297D00DD957B /* MinuteIndicators.swift */,
+				499992AC268A5FA500F0D49C /* MinuteGuide.swift */,
+				499992AF268A64E900F0D49C /* MinuteGuideNumbers.swift */,
+				494FFCFF268A3ADB00DD957B /* ClockHand.swift */,
+				499992B2268A682200F0D49C /* DigitalClock.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		494FFCE0268A27A400DD957B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCE1268A27B900DD957B /* GeometryReader+Extensions.swift */,
+				494FFCE7268A286000DD957B /* CGPoint+Circle.swift */,
+				494FFCE9268A287F00DD957B /* CGRect+Circle.swift */,
+				494FFCEC268A28C200DD957B /* Double+Time.swift */,
+				494FFCF8268A393A00DD957B /* Date+Clock.swift */,
+				499992B5268A6CA700F0D49C /* Date+Random.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		494FFCE3268A282A00DD957B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCE4268A283C00DD957B /* PositionInCircle.swift */,
+				499992A6268A51A800F0D49C /* FontProportional.swift */,
+				499992A9268A52C500F0D49C /* ArmDragGesture.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		494FFCFE268A3AC000DD957B /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCF5268A38FC00DD957B /* ClockArmType.swift */,
+				494FFCFB268A39CB00DD957B /* ClockArm.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		499992B8268A6F3A00F0D49C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				499992BA268A6F5100F0D49C /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		499992B9268A6F4200F0D49C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCB8268A244B00DD957B /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		499992BD268A702800F0D49C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				499992BE268A703600F0D49C /* SpeechService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		499992C1268A750D00F0D49C /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				499992C2268A752B00F0D49C /* ClockView.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		499992C5268A757D00F0D49C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				499992C6268A758C00F0D49C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4937042D268B05BC00FFD061 /* Tests (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49370435268B05BC00FFD061 /* Build configuration list for PBXNativeTarget "Tests (iOS)" */;
+			buildPhases = (
+				4937042A268B05BC00FFD061 /* Sources */,
+				4937042B268B05BC00FFD061 /* Frameworks */,
+				4937042C268B05BC00FFD061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49370434268B05BC00FFD061 /* PBXTargetDependency */,
+			);
+			name = "Tests (iOS)";
+			productName = "Tests (iOS)";
+			productReference = 4937042E268B05BC00FFD061 /* Tests (iOS).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4937043C268B098400FFD061 /* Tests (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49370444268B098400FFD061 /* Build configuration list for PBXNativeTarget "Tests (macOS)" */;
+			buildPhases = (
+				49370439268B098400FFD061 /* Sources */,
+				4937043A268B098400FFD061 /* Frameworks */,
+				4937043B268B098400FFD061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49370443268B098400FFD061 /* PBXTargetDependency */,
+			);
+			name = "Tests (macOS)";
+			productName = "Tests (macOS)";
+			productReference = 4937043D268B098400FFD061 /* Tests (macOS).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		494FFCBD268A244E00DD957B /* TellTheTime (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494FFCD2268A244E00DD957B /* Build configuration list for PBXNativeTarget "TellTheTime (iOS)" */;
+			buildPhases = (
+				494FFCBA268A244E00DD957B /* Sources */,
+				494FFCBB268A244E00DD957B /* Frameworks */,
+				494FFCBC268A244E00DD957B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TellTheTime (iOS)";
+			productName = "TellTheTime (iOS)";
+			productReference = 494FFCBE268A244E00DD957B /* TellTheTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		494FFCC5268A244E00DD957B /* TellTheTime (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494FFCD5268A244E00DD957B /* Build configuration list for PBXNativeTarget "TellTheTime (macOS)" */;
+			buildPhases = (
+				494FFCC2268A244E00DD957B /* Sources */,
+				494FFCC3268A244E00DD957B /* Frameworks */,
+				494FFCC4268A244E00DD957B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TellTheTime (macOS)";
+			productName = "TellTheTime (macOS)";
+			productReference = 494FFCC6268A244E00DD957B /* Tell the Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494FFCB2268A244B00DD957B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4937042D268B05BC00FFD061 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 494FFCBD268A244E00DD957B;
+					};
+					4937043C268B098400FFD061 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 494FFCC5268A244E00DD957B;
+					};
+					494FFCBD268A244E00DD957B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					494FFCC5268A244E00DD957B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 494FFCB5268A244B00DD957B /* Build configuration list for PBXProject "TellTheTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494FFCB1268A244B00DD957B;
+			productRefGroup = 494FFCBF268A244E00DD957B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494FFCBD268A244E00DD957B /* TellTheTime (iOS) */,
+				494FFCC5268A244E00DD957B /* TellTheTime (macOS) */,
+				4937042D268B05BC00FFD061 /* Tests (iOS) */,
+				4937043C268B098400FFD061 /* Tests (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4937042C268B05BC00FFD061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4937043B268B098400FFD061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCBC268A244E00DD957B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FFCCE268A244E00DD957B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCC4268A244E00DD957B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FFCCF268A244E00DD957B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4937042A268B05BC00FFD061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49370431268B05BC00FFD061 /* TellTheTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49370439268B098400FFD061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49370440268B098400FFD061 /* TellTheTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCBA268A244E00DD957B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4937044A268B0B4A00FFD061 /* IOSAppScene.swift in Sources */,
+				494FFCCC268A244E00DD957B /* ContentView.swift in Sources */,
+				499992C3268A752B00F0D49C /* ClockView.swift in Sources */,
+				494FFD00268A3ADB00DD957B /* ClockHand.swift in Sources */,
+				494FFCF9268A393A00DD957B /* Date+Clock.swift in Sources */,
+				494FFCDA268A246F00DD957B /* ClockOutline.swift in Sources */,
+				494FFCE2268A27B900DD957B /* GeometryReader+Extensions.swift in Sources */,
+				494FFCF0268A290700DD957B /* ClockFace.swift in Sources */,
+				49422160268A515100137668 /* HourNumbers.swift in Sources */,
+				494FFCEA268A287F00DD957B /* CGRect+Circle.swift in Sources */,
+				494FFCF3268A297D00DD957B /* MinuteIndicators.swift in Sources */,
+				494FFCFC268A39CB00DD957B /* ClockArm.swift in Sources */,
+				499992AA268A52C500F0D49C /* ArmDragGesture.swift in Sources */,
+				499992B0268A64E900F0D49C /* MinuteGuideNumbers.swift in Sources */,
+				494FFCCA268A244E00DD957B /* TellTheTimeApp.swift in Sources */,
+				499992BB268A6F5100F0D49C /* AppModel.swift in Sources */,
+				499992B3268A682200F0D49C /* DigitalClock.swift in Sources */,
+				499992B6268A6CA700F0D49C /* Date+Random.swift in Sources */,
+				494FFCF6268A38FC00DD957B /* ClockArmType.swift in Sources */,
+				494FFCDE268A276700DD957B /* HourIndicators.swift in Sources */,
+				494FFCED268A28C300DD957B /* Double+Time.swift in Sources */,
+				499992A7268A51A800F0D49C /* FontProportional.swift in Sources */,
+				494FFCE8268A286000DD957B /* CGPoint+Circle.swift in Sources */,
+				494FFCE5268A283C00DD957B /* PositionInCircle.swift in Sources */,
+				499992AD268A5FA500F0D49C /* MinuteGuide.swift in Sources */,
+				499992BF268A703600F0D49C /* SpeechService.swift in Sources */,
+				499992C7268A758C00F0D49C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FFCC2268A244E00DD957B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FFCCD268A244E00DD957B /* ContentView.swift in Sources */,
+				499992C4268A752B00F0D49C /* ClockView.swift in Sources */,
+				494FFCFD268A39CB00DD957B /* ClockArm.swift in Sources */,
+				494FFCF7268A38FC00DD957B /* ClockArmType.swift in Sources */,
+				494FFCFA268A393A00DD957B /* Date+Clock.swift in Sources */,
+				494FFCEB268A287F00DD957B /* CGRect+Circle.swift in Sources */,
+				494FFCCB268A244E00DD957B /* TellTheTimeApp.swift in Sources */,
+				49422161268A515100137668 /* HourNumbers.swift in Sources */,
+				494FFD06268A3F9800DD957B /* CGPoint+Circle.swift in Sources */,
+				494FFCDB268A274E00DD957B /* ClockOutline.swift in Sources */,
+				494FFCEE268A28C300DD957B /* Double+Time.swift in Sources */,
+				499992AB268A52C500F0D49C /* ArmDragGesture.swift in Sources */,
+				499992B1268A64E900F0D49C /* MinuteGuideNumbers.swift in Sources */,
+				4937044C268B0B9700FFD061 /* MacAppScene.swift in Sources */,
+				494FFD05268A3F9500DD957B /* GeometryReader+Extensions.swift in Sources */,
+				499992BC268A6F5100F0D49C /* AppModel.swift in Sources */,
+				499992B4268A682200F0D49C /* DigitalClock.swift in Sources */,
+				499992B7268A6CA700F0D49C /* Date+Random.swift in Sources */,
+				494FFCF1268A290700DD957B /* ClockFace.swift in Sources */,
+				494FFCDF268A276A00DD957B /* HourIndicators.swift in Sources */,
+				494FFD01268A3ADB00DD957B /* ClockHand.swift in Sources */,
+				499992A8268A51A800F0D49C /* FontProportional.swift in Sources */,
+				494FFCF4268A297D00DD957B /* MinuteIndicators.swift in Sources */,
+				494FFCE6268A284100DD957B /* PositionInCircle.swift in Sources */,
+				499992AE268A5FA500F0D49C /* MinuteGuide.swift in Sources */,
+				499992C0268A703600F0D49C /* SpeechService.swift in Sources */,
+				499992C8268A758C00F0D49C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49370434268B05BC00FFD061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494FFCBD268A244E00DD957B /* TellTheTime (iOS) */;
+			targetProxy = 49370433268B05BC00FFD061 /* PBXContainerItemProxy */;
+		};
+		49370443268B098400FFD061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494FFCC5268A244E00DD957B /* TellTheTime (macOS) */;
+			targetProxy = 49370442268B098400FFD061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49370436268B05BC00FFD061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				INFOPLIST_FILE = "Tests (iOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TellTheTime.app/TellTheTime";
+			};
+			name = Debug;
+		};
+		49370437268B05BC00FFD061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				INFOPLIST_FILE = "Tests (iOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TellTheTime.app/TellTheTime";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49370445268B098400FFD061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				INFOPLIST_FILE = "Tests (macOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tell the Time.app/Contents/MacOS/Tell the Time";
+			};
+			name = Debug;
+		};
+		49370446268B098400FFD061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				INFOPLIST_FILE = "Tests (macOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tell the Time.app/Contents/MacOS/Tell the Time";
+			};
+			name = Release;
+		};
+		494FFCD0268A244E00DD957B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		494FFCD1268A244E00DD957B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		494FFCD3268A244E00DD957B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime";
+				PRODUCT_NAME = TellTheTime;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		494FFCD4268A244E00DD957B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime";
+				PRODUCT_NAME = TellTheTime;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494FFCD6268A244E00DD957B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime";
+				PRODUCT_NAME = "Tell the Time";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		494FFCD7268A244E00DD957B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B43ZJ6HHUE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adam-young.TellTheTime";
+				PRODUCT_NAME = "Tell the Time";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49370435268B05BC00FFD061 /* Build configuration list for PBXNativeTarget "Tests (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49370436268B05BC00FFD061 /* Debug */,
+				49370437268B05BC00FFD061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49370444268B098400FFD061 /* Build configuration list for PBXNativeTarget "Tests (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49370445268B098400FFD061 /* Debug */,
+				49370446268B098400FFD061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494FFCB5268A244B00DD957B /* Build configuration list for PBXProject "TellTheTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FFCD0268A244E00DD957B /* Debug */,
+				494FFCD1268A244E00DD957B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494FFCD2268A244E00DD957B /* Build configuration list for PBXNativeTarget "TellTheTime (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FFCD3268A244E00DD957B /* Debug */,
+				494FFCD4268A244E00DD957B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494FFCD5268A244E00DD957B /* Build configuration list for PBXNativeTarget "TellTheTime (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FFCD6268A244E00DD957B /* Debug */,
+				494FFCD7268A244E00DD957B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 494FFCB2268A244B00DD957B /* Project object */;
+}
