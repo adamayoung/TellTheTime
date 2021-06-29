@@ -9,7 +9,6 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:TellTheTime.xcodeproj",
       "identifier" : "494FFCC5268A244E00DD957B",
