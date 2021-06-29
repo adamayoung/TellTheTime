@@ -8,7 +8,7 @@ struct MinuteGuideNumbers: View {
         ForEach(Self.minutes, id: \.self) { minute in
             let formattedMinute = minute > 0 ? minute : minute * -1
 
-            Text("\(formattedMinute)")
+            Text(verbatim: "\(formattedMinute)")
                 .modifier(PositionInCircle(
                     angle: .degrees(Double(minute) * .minuteInDegree),
                     marginRatio: 0.47

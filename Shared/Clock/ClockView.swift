@@ -7,7 +7,7 @@ struct ClockView: View {
     var body: some View {
         VStack(alignment: .center) {
             Spacer()
-            Text("What's the time?")
+            Text("WHATS_THE_TIME")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .frame(maxWidth: .infinity)
@@ -40,7 +40,7 @@ struct ClockView: View {
             Spacer()
 
             Button(action: model.generateRandomDate) {
-                Text("New time")
+                Text("NEW_TIME")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()

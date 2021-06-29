@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490A7645268BA1FA006EB93E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 490A7648268BA1FA006EB93E /* Localizable.strings */; };
+		490A7646268BA1FA006EB93E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 490A7648268BA1FA006EB93E /* Localizable.strings */; };
 		49370431268B05BC00FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370430268B05BC00FFD061 /* TellTheTimeTests.swift */; };
 		49370440268B098400FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937043F268B098400FFD061 /* TellTheTimeTests.swift */; };
 		4937044A268B0B4A00FFD061 /* IOSAppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370449268B0B4A00FFD061 /* IOSAppScene.swift */; };
@@ -45,6 +47,8 @@
 		494FFD01268A3ADB00DD957B /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCFF268A3ADB00DD957B /* ClockHand.swift */; };
 		494FFD05268A3F9500DD957B /* GeometryReader+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE1268A27B900DD957B /* GeometryReader+Extensions.swift */; };
 		494FFD06268A3F9800DD957B /* CGPoint+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE7268A286000DD957B /* CGPoint+Circle.swift */; };
+		4963FA35268BB10F004ECCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4963FA38268BB10F004ECCF8 /* InfoPlist.strings */; };
+		4963FA36268BB10F004ECCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4963FA38268BB10F004ECCF8 /* InfoPlist.strings */; };
 		498B782D268B268C006BD8B8 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B782C268B268C006BD8B8 /* AppModelTests.swift */; };
 		498B782E268B268C006BD8B8 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B782C268B268C006BD8B8 /* AppModelTests.swift */; };
 		498B7832268B26E3006BD8B8 /* MockSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B7831268B26E3006BD8B8 /* MockSpeechService.swift */; };
@@ -89,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		490A7647268BA1FA006EB93E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4937042E268B05BC00FFD061 /* Tests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49370430268B05BC00FFD061 /* TellTheTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeTests.swift; sourceTree = "<group>"; };
 		49370432268B05BC00FFD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 		494FFCF8268A393A00DD957B /* Date+Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Clock.swift"; sourceTree = "<group>"; };
 		494FFCFB268A39CB00DD957B /* ClockArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockArm.swift; sourceTree = "<group>"; };
 		494FFCFF268A3ADB00DD957B /* ClockHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHand.swift; sourceTree = "<group>"; };
+		4963FA37268BB10F004ECCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		498B782C268B268C006BD8B8 /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 		498B7831268B26E3006BD8B8 /* MockSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeechService.swift; sourceTree = "<group>"; };
 		499992A6268A51A800F0D49C /* FontProportional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontProportional.swift; sourceTree = "<group>"; };
@@ -167,6 +173,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490A7641268BA18B006EB93E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				494FFCB9268A244E00DD957B /* Assets.xcassets */,
+				490A7648268BA1FA006EB93E /* Localizable.strings */,
+				4963FA38268BB10F004ECCF8 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4937042F268B05BC00FFD061 /* Tests (iOS) */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +238,7 @@
 				494FFCE3268A282A00DD957B /* ViewModifiers */,
 				494FFCE0268A27A400DD957B /* Extensions */,
 				499992BD268A702800F0D49C /* Services */,
-				494FFCB9268A244E00DD957B /* Assets.xcassets */,
+				490A7641268BA18B006EB93E /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -500,6 +516,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				494FFCCE268A244E00DD957B /* Assets.xcassets in Resources */,
+				4963FA35268BB10F004ECCF8 /* InfoPlist.strings in Resources */,
+				490A7645268BA1FA006EB93E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +526,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				494FFCCF268A244E00DD957B /* Assets.xcassets in Resources */,
+				4963FA36268BB10F004ECCF8 /* InfoPlist.strings in Resources */,
+				490A7646268BA1FA006EB93E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +636,25 @@
 			targetProxy = 49370442268B098400FFD061 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		490A7648268BA1FA006EB93E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490A7647268BA1FA006EB93E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4963FA38268BB10F004ECCF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4963FA37268BB10F004ECCF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		49370436268B05BC00FFD061 /* Debug */ = {

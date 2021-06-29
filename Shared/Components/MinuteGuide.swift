@@ -17,14 +17,14 @@ struct MinuteGuide: View {
                     .rotation(Angle(degrees: 90))
                     .foregroundColor(.red)
 
-                Text("past")
+                Text("PAST")
                     .modifier(PositionInCircle(
                         angle: .degrees(Double(3) * .hourInDegree),
                         marginRatio: 3.3 / 7
                     ))
                     .modifier(FontProportional(ratio: 1 / 6))
 
-                Text("to")
+                Text("TO")
                     .modifier(PositionInCircle(
                         angle: .degrees(Double(9) * .hourInDegree),
                         marginRatio: 3.3 / 7
