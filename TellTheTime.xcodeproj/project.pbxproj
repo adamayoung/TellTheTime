@@ -139,6 +139,7 @@
 		499992BE268A703600F0D49C /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		499992C2268A752B00F0D49C /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		499992C6268A758C00F0D49C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		49EE671F268BBF4E0010EC5A /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +216,7 @@
 		494FFCB1268A244B00DD957B = {
 			isa = PBXGroup;
 			children = (
+				49EE671E268BBF240010EC5A /* ci_scripts */,
 				494FFCB6268A244B00DD957B /* Shared */,
 				494FFCC0268A244E00DD957B /* iOS */,
 				494FFCC7268A244E00DD957B /* macOS */,
@@ -375,6 +377,14 @@
 				499992C6268A758C00F0D49C /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		49EE671E268BBF240010EC5A /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				49EE671F268BBF4E0010EC5A /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
