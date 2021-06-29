@@ -2,8 +2,8 @@
 
 set -e
 
-# Pull Request
-if [[ -n $CI_PULL_REQUEST_NUMBER ]];
+# SwiftLint on Analyze action
+if [ CI_XCODEBUILD_ACTION = 'analyze' ];
 then
     echo "Linting..."
     brew install swiftlint
