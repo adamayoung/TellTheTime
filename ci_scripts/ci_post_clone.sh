@@ -6,5 +6,8 @@ set -e
 if [[ -n $CI_PULL_REQUEST_NUMBER ]];
 then
     echo "Linting..."
-    ./perform_lint.sh
+    brew install swiftlint
+
+    cd $CI_WORKSPACE
+    swiftlint --strict
 fi
