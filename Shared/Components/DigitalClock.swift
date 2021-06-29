@@ -11,7 +11,7 @@ struct DigitalClock: View {
     }
 
     var body: some View {
-        Text("\(formattedTime)")
+        Text(verbatim: "\(formattedTime)")
             .font(.system(.title, design: .monospaced))
     }
 

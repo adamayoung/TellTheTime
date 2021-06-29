@@ -14,11 +14,11 @@ struct SettingsView: View {
         #else
         NavigationView {
             content
-                .navigationTitle("Settings")
+                .navigationTitle("SETTINGS")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
-                        Button("Close") {
+                        Button("CLOSE") {
                             self.isPresented = false
                         }
                     }
@@ -29,23 +29,23 @@ struct SettingsView: View {
 
     private var content: some View {
         Form {
-            Section(header: Text("Clock Display")) {
+            Section(header: Text("CLOCK_DISPLAY")) {
                 Toggle(isOn: $model.isMinuteGuideVisible) {
-                    Text("Show minute guide")
+                    Text("SHOW_MINUTE_GUIDE")
                 }
 
                 Toggle(isOn: $model.isDigitalClockVisible) {
-                    Text("Show digital clock")
+                    Text("SHOW_DIGITAL_CLOCK")
                 }
 
                 Toggle(isOn: $model.isTimeSettable) {
-                    Text("Manually set time")
+                    Text("MANUALLY_SET_TIME")
                 }
             }
 
-            Section(header: Text("Time")) {
+            Section(header: Text("TIME")) {
                 Toggle(isOn: $model.isRoundToNearestFiveMinutes) {
-                    Text("Round to the nearest 5 minutes")
+                    Text("ROUND_TO_THE_NEAREST_5_MINUTES")
                 }
             }
         }

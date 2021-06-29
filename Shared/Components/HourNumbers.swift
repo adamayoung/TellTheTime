@@ -6,7 +6,7 @@ struct HourNumbers: View {
 
     var body: some View {
         ForEach(Self.hours, id: \.self) { hour in
-            Text("\(hour)")
+            Text(verbatim: "\(hour)")
                 .modifier(PositionInCircle(
                     angle: .degrees(Double(hour) * .hourInDegree),
                     marginRatio: 2 / 7

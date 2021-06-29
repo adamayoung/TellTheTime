@@ -48,28 +48,40 @@ extension Date {
         let minute = Calendar.current.component(.minute, from: self)
 
         if minute == 15 {
-            return "Quarter past \(hour)"
+            return String(format: NSLocalizedString("QUARTER_PAST_H", comment: "Quarter past H"), hour)
         }
 
         if minute == 30 {
-            return "Half past \(hour)"
+            return String(format: NSLocalizedString("HALF_PAST_H", comment: "Half past H"), hour)
         }
 
         if minute == 45 {
-            return "Quarter to \(nextHour)"
+            return String(format: NSLocalizedString("QUARTER_TO_H", comment: "Quarter to H"), nextHour)
         }
 
-        if minute > 0 && minute < 30 {
-            return "\(minute) minutes past \(hour)"
+        if minute == 1 {
+            return String(format: NSLocalizedString("ONE_MINUTE_PAST_H", comment: "1 minute past H"), hour)
         }
 
-        if minute > 30 && minute <= 59 {
+        if minute < 30 {
+            return String(format: NSLocalizedString("M_MINUTES_PAST_H", comment: "M minutes past H"), minute, hour)
+        }
+
+        if minute > 30 && minute < 59 {
             let toMinute = 60 - minute
-            return "\(toMinute) minutes to \(nextHour)"
+            return String(format: NSLocalizedString("M_MINUTES_TO_H", comment: "M minutes to H"), toMinute, nextHour)
         }
 
-        return "\(hour) o'clock"
+        if minute == 59 {
+            return String(format: NSLocalizedString("ONE_MINUTE_TO_H", comment: "1 minute to H"), hour)
+        }
+
+        return String(format: NSLocalizedString("H_OCLOCK", comment: "H o'clock"), hour)
     }
+
+}
+
+extension Date {
 
     private func positiveDegrees(angle: Angle) -> Double {
         angle.degrees > 0 ? angle.degrees : angle.degrees + 360
