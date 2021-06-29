@@ -3,11 +3,6 @@ import SwiftUI
 @main
 struct TellTheTimeApp: App {
 
-
-
-
-
-    
     @StateObject private var model = AppModel()
 
     @SceneBuilder var body: some Scene {
