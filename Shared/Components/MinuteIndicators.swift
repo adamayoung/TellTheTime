@@ -5,7 +5,7 @@ struct MinuteIndicators: View {
     private static let minutes = 1..<61
 
     var body: some View {
-        ForEach(Self.minutes) { minute in
+        ForEach(Self.minutes, id: \.self) { minute in
             Rectangle()
                 .frame(width: 2, height: 10)
                 .rotationEffect(.degrees(Double(minute) * .minuteInDegree))
