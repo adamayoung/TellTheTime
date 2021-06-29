@@ -15,7 +15,12 @@ struct ClockView: View {
             Spacer()
 
             ZStack(alignment: .bottom) {
-                ClockFace(date: $model.date, isMinuteGuideVisible: model.isMinuteGuideVisible, canSetTime: model.isTimeSettable)
+                ClockFace(
+                    date: $model.date,
+                    isMinuteGuideVisible: model.isMinuteGuideVisible,
+                    isHourNumbersVisible: model.isHourNumbersVisible,
+                    canSetTime: model.isTimeSettable
+                )
 
                 HStack {
                     Spacer()

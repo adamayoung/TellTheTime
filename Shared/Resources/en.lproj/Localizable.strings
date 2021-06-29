@@ -4,10 +4,11 @@
 "CLOSE" = "Close";
 "CLOCK_DISPLAY" = "Clock Display";
 "SHOW_MINUTE_GUIDE" = "Show minute guide";
+"SHOW_HOUR_NUMBERS" = "Show hours";
 "SHOW_DIGITAL_CLOCK" = "Show digital clock";
-"MANUALLY_SET_TIME" = "Manually set time";
 "TIME" = "Time";
 "ROUND_TO_THE_NEAREST_5_MINUTES" = "Round to the nearest 5 minutes";
+"MANUALLY_SET_TIME" = "Manually set time";
 "PAST" = "past";
 "TO" = "to";
 "QUARTER_PAST_H" = "Quarter past %lld";

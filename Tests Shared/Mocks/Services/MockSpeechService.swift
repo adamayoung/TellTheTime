@@ -1,5 +1,5 @@
-@testable import TellTheTime
 import Foundation
+@testable import TellTheTime
 
 final class MockSpeechService: SpeechService {
 
