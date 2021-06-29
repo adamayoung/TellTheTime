@@ -4,6 +4,7 @@ struct ClockFace: View {
 
     @Binding var date: Date
     var isMinuteGuideVisible = true
+    var isHourNumbersVisible = true
     var canSetTime: Bool = true
 
     @Environment(\.colorScheme) private var colorScheme
@@ -17,7 +18,9 @@ struct ClockFace: View {
                 MinuteGuide()
                 MinuteGuideNumbers()
             }
-            HourNumbers()
+            if isHourNumbersVisible {
+                HourNumbers()
+            }
             ClockHand(type: .hour, date: $date, canChange: canSetTime)
             ClockHand(type: .minute, date: $date, canChange: canSetTime)
             Circle()

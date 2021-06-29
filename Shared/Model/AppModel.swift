@@ -4,6 +4,7 @@ final class AppModel: ObservableObject {
 
     @Published var date: Date = Date()
     @AppStorage("minuteGuideVisible") var isMinuteGuideVisible = true
+    @AppStorage("hourNumbersVisible") var isHourNumbersVisible = true
     @AppStorage("digitalClockVisible") var isDigitalClockVisible = false
     @AppStorage("roundToNearestFiveMinutes") var isRoundToNearestFiveMinutes = true
     @AppStorage("timeSettable") var isTimeSettable = false

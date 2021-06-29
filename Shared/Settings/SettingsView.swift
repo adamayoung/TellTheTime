@@ -34,16 +34,20 @@ struct SettingsView: View {
                     Text("SHOW_MINUTE_GUIDE")
                 }
 
-                Toggle(isOn: $model.isDigitalClockVisible) {
-                    Text("SHOW_DIGITAL_CLOCK")
+                Toggle(isOn: $model.isHourNumbersVisible) {
+                    Text("SHOW_HOUR_NUMBERS")
                 }
 
-                Toggle(isOn: $model.isTimeSettable) {
-                    Text("MANUALLY_SET_TIME")
+                Toggle(isOn: $model.isDigitalClockVisible) {
+                    Text("SHOW_DIGITAL_CLOCK")
                 }
             }
 
             Section(header: Text("TIME")) {
+                Toggle(isOn: $model.isTimeSettable) {
+                    Text("MANUALLY_SET_TIME")
+                }
+
                 Toggle(isOn: $model.isRoundToNearestFiveMinutes) {
                     Text("ROUND_TO_THE_NEAREST_5_MINUTES")
                 }
