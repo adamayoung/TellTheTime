@@ -1,5 +1,5 @@
-@testable import TellTheTime
 import SwiftUI
+@testable import TellTheTime
 import XCTest
 
 class DateClockTests: XCTestCase {
