@@ -7,6 +7,7 @@ struct ClockView: View {
     var body: some View {
         VStack(alignment: .center) {
             Spacer()
+
             Text("WHATS_THE_TIME")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -15,7 +16,7 @@ struct ClockView: View {
             Spacer()
 
             ZStack(alignment: .bottom) {
-                ClockFace(
+                Clock(
                     date: $model.date,
                     isMinuteGuideVisible: model.isMinuteGuideVisible,
                     isHourNumbersVisible: model.isHourNumbersVisible,
@@ -25,11 +26,9 @@ struct ClockView: View {
                 HStack {
                     Spacer()
                     Button(action: model.speakDate) {
-                        #if os(macOS)
-                        speakImage.frame(width: 30, height: 30)
-                        #else
-                        speakImage.frame(width: 30, height: 30)
-                        #endif
+                        Image(systemName: "speaker.wave.2.circle")
+                            .resizable()
+                            .frame(width: 30, height: 30)
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
@@ -56,11 +55,6 @@ struct ClockView: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-    }
-
-    private var speakImage: some View {
-        Image(systemName: "speaker.wave.2.circle")
-            .resizable()
     }
 
 }

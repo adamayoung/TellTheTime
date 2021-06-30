@@ -8,13 +8,13 @@ struct MinuteGuide: View {
                 Circle()
                     .trim(from: 0, to: 0.5)
                     .stroke(lineWidth: geometry.radius / 7)
-                    .rotation(Angle(degrees: -90))
+                    .rotation(.degrees(-90))
                     .foregroundColor(.blue)
 
                 Circle()
                     .trim(from: 0, to: 0.5)
                     .stroke(lineWidth: geometry.radius / 7)
-                    .rotation(Angle(degrees: 90))
+                    .rotation(.degrees(90))
                     .foregroundColor(.red)
 
                 Text("PAST")

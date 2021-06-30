@@ -2,7 +2,7 @@ import SwiftUI
 
 final class AppModel: ObservableObject {
 
-    @Published var date: Date = Date()
+    @Published var date: Date
     @AppStorage("minuteGuideVisible") var isMinuteGuideVisible = true
     @AppStorage("hourNumbersVisible") var isHourNumbersVisible = true
     @AppStorage("digitalClockVisible") var isDigitalClockVisible = false
@@ -11,22 +11,17 @@ final class AppModel: ObservableObject {
 
     private let speechService: SpeechService
 
-    init(speechService: SpeechService = AVSpeechService()) {
+    init(date: Date = .random(rounded: true), speechService: SpeechService = AVSpeechService()) {
+        self.date = date
         self.speechService = speechService
     }
 
     func generateRandomDate() {
-        let newDate = Date.random()
-        if isRoundToNearestFiveMinutes {
-            date = newDate.roundedToNearestFiveMinutes()
-            return
-        }
-
-        date = newDate
+        self.date = Date.random(rounded: isRoundToNearestFiveMinutes)
     }
 
     func speakDate() {
-        speechService.say(date.utteranceText)
+        speechService.say(date.localizedString)
     }
 
 }

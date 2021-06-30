@@ -11,11 +11,3 @@
 "MANUALLY_SET_TIME" = "Manually set time";
 "PAST" = "past";
 "TO" = "to";
-"QUARTER_PAST_H" = "Quarter past %lld";
-"HALF_PAST_H" = "Half past %lld";
-"QUARTER_TO_H" = "Quarter to %lld";
-"1_MINUTE_PAST_H" = "1 minute past %lld";
-"M_MINUTES_PAST_H" = "%lld minutes past %lld";
-"M_MINUTES_TO_H" = "%lld minutes to %lld";
-"1_MINUTE_TO_H" = "1 minute to %lld";
-"H_OCLOCK" = "%lld o'clock";

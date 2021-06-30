@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ClockFace: View {
+struct Clock: View {
 
     @Binding var date: Date
     var isMinuteGuideVisible = true
@@ -32,10 +32,10 @@ struct ClockFace: View {
 
 }
 
-struct ClockFace_Previews: PreviewProvider {
+struct Clock_Previews: PreviewProvider {
 
     static var previews: some View {
-        ClockFace(date: .constant(Date()))
+        Clock(date: .constant(Date()))
             .previewLayout(.sizeThatFits)
     }
 

@@ -35,7 +35,7 @@ extension Date {
         self = Calendar.current.date(bySettingHour: hour, minute: minute, second: 0, of: self) ?? self
     }
 
-    var utteranceText: String {
+    var localizedString: String {
         var hour = Calendar.current.component(.hour, from: self)
         if hour == 0 {
             hour = 12
@@ -47,36 +47,28 @@ extension Date {
         }
         let minute = Calendar.current.component(.minute, from: self)
 
-        if minute == 15 {
-            return String(format: NSLocalizedString("QUARTER_PAST_H", comment: "Quarter past H"), hour)
-        }
+        switch minute {
+        case 15:
+            return .localizedStringWithFormat(NSLocalizedString("QUARTER_PAST_H", comment: "Quarter past H"), hour)
 
-        if minute == 30 {
-            return String(format: NSLocalizedString("HALF_PAST_H", comment: "Half past H"), hour)
-        }
+        case 30:
+            return .localizedStringWithFormat(NSLocalizedString("HALF_PAST_H", comment: "Half past H"), hour)
 
-        if minute == 45 {
-            return String(format: NSLocalizedString("QUARTER_TO_H", comment: "Quarter to H"), nextHour)
-        }
+        case 45:
+            return .localizedStringWithFormat(NSLocalizedString("QUARTER_TO_H", comment: "Quarter to H"), nextHour)
 
-        if minute == 1 {
-            return String(format: NSLocalizedString("ONE_MINUTE_PAST_H", comment: "1 minute past H"), hour)
-        }
+        case 1..<30:
+            return .localizedStringWithFormat(NSLocalizedString("M_MINUTES_PAST_H", comment: "M minutes past H"),
+                                              minute, hour)
 
-        if minute < 30 {
-            return String(format: NSLocalizedString("M_MINUTES_PAST_H", comment: "M minutes past H"), minute, hour)
-        }
-
-        if minute > 30 && minute < 59 {
+        case 31..<60:
             let toMinute = 60 - minute
-            return String(format: NSLocalizedString("M_MINUTES_TO_H", comment: "M minutes to H"), toMinute, nextHour)
-        }
+            return .localizedStringWithFormat(NSLocalizedString("M_MINUTES_TO_H", comment: "M minutes to H"), toMinute,
+                                              nextHour)
 
-        if minute == 59 {
-            return String(format: NSLocalizedString("ONE_MINUTE_TO_H", comment: "1 minute to H"), hour)
+        default:
+            return .localizedStringWithFormat(NSLocalizedString("H_OCLOCK", comment: "H o'clock"), hour)
         }
-
-        return String(format: NSLocalizedString("H_OCLOCK", comment: "H o'clock"), hour)
     }
 
 }
