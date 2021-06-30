@@ -37,8 +37,8 @@
 		494FFCEB268A287F00DD957B /* CGRect+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCE9268A287F00DD957B /* CGRect+Circle.swift */; };
 		494FFCED268A28C300DD957B /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEC268A28C200DD957B /* Double+Time.swift */; };
 		494FFCEE268A28C300DD957B /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEC268A28C200DD957B /* Double+Time.swift */; };
-		494FFCF0268A290700DD957B /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* ClockFace.swift */; };
-		494FFCF1268A290700DD957B /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* ClockFace.swift */; };
+		494FFCF0268A290700DD957B /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* Clock.swift */; };
+		494FFCF1268A290700DD957B /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCEF268A290700DD957B /* Clock.swift */; };
 		494FFCF3268A297D00DD957B /* MinuteIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF2268A297D00DD957B /* MinuteIndicators.swift */; };
 		494FFCF4268A297D00DD957B /* MinuteIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF2268A297D00DD957B /* MinuteIndicators.swift */; };
 		494FFCF6268A38FC00DD957B /* ClockArmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FFCF5268A38FC00DD957B /* ClockArmType.swift */; };
@@ -112,8 +112,8 @@
 		4937043D268B098400FFD061 /* Tests (macOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests (macOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4937043F268B098400FFD061 /* TellTheTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeTests.swift; sourceTree = "<group>"; };
 		49370441268B098400FFD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49370447268B09FB00FFD061 /* TellTheTime (iOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "TellTheTime (iOS).xctestplan"; path = "Tests (iOS)/TellTheTime (iOS).xctestplan"; sourceTree = SOURCE_ROOT; };
-		49370448268B0A1500FFD061 /* TellTheTime (macOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TellTheTime (macOS).xctestplan"; sourceTree = "<group>"; };
+		49370447268B09FB00FFD061 /* Unit Tests (iOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Unit Tests (iOS).xctestplan"; path = "Tests (iOS)/Unit Tests (iOS).xctestplan"; sourceTree = SOURCE_ROOT; };
+		49370448268B0A1500FFD061 /* Unit Tests (macOS).xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Unit Tests (macOS).xctestplan"; sourceTree = "<group>"; };
 		49370449268B0B4A00FFD061 /* IOSAppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppScene.swift; sourceTree = "<group>"; };
 		4937044B268B0B9700FFD061 /* MacAppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppScene.swift; sourceTree = "<group>"; };
 		4942215F268A515100137668 /* HourNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourNumbers.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		494FFCE7268A286000DD957B /* CGPoint+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Circle.swift"; sourceTree = "<group>"; };
 		494FFCE9268A287F00DD957B /* CGRect+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Circle.swift"; sourceTree = "<group>"; };
 		494FFCEC268A28C200DD957B /* Double+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
-		494FFCEF268A290700DD957B /* ClockFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFace.swift; sourceTree = "<group>"; };
+		494FFCEF268A290700DD957B /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		494FFCF2268A297D00DD957B /* MinuteIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteIndicators.swift; sourceTree = "<group>"; };
 		494FFCF5268A38FC00DD957B /* ClockArmType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockArmType.swift; sourceTree = "<group>"; };
 		494FFCF8268A393A00DD957B /* Date+Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Clock.swift"; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				49370430268B05BC00FFD061 /* TellTheTimeTests.swift */,
-				49370447268B09FB00FFD061 /* TellTheTime (iOS).xctestplan */,
+				49370447268B09FB00FFD061 /* Unit Tests (iOS).xctestplan */,
 				49370432268B05BC00FFD061 /* Info.plist */,
 			);
 			path = "Tests (iOS)";
@@ -237,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				4937043F268B098400FFD061 /* TellTheTimeTests.swift */,
-				49370448268B0A1500FFD061 /* TellTheTime (macOS).xctestplan */,
+				49370448268B0A1500FFD061 /* Unit Tests (macOS).xctestplan */,
 				49370441268B098400FFD061 /* Info.plist */,
 			);
 			path = "Tests (macOS)";
@@ -308,7 +308,7 @@
 		494FFCD8268A245F00DD957B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				494FFCEF268A290700DD957B /* ClockFace.swift */,
+				494FFCEF268A290700DD957B /* Clock.swift */,
 				494FFCD9268A246F00DD957B /* ClockOutline.swift */,
 				494FFCDD268A276700DD957B /* HourIndicators.swift */,
 				4942215F268A515100137668 /* HourNumbers.swift */,
@@ -611,7 +611,7 @@
 				494FFCF9268A393A00DD957B /* Date+Clock.swift in Sources */,
 				494FFCDA268A246F00DD957B /* ClockOutline.swift in Sources */,
 				494FFCE2268A27B900DD957B /* GeometryReader+Extensions.swift in Sources */,
-				494FFCF0268A290700DD957B /* ClockFace.swift in Sources */,
+				494FFCF0268A290700DD957B /* Clock.swift in Sources */,
 				49422160268A515100137668 /* HourNumbers.swift in Sources */,
 				494FFCEA268A287F00DD957B /* CGRect+Circle.swift in Sources */,
 				494FFCF3268A297D00DD957B /* MinuteIndicators.swift in Sources */,
@@ -656,7 +656,7 @@
 				499992BC268A6F5100F0D49C /* AppModel.swift in Sources */,
 				499992B4268A682200F0D49C /* DigitalClock.swift in Sources */,
 				499992B7268A6CA700F0D49C /* Date+Random.swift in Sources */,
-				494FFCF1268A290700DD957B /* ClockFace.swift in Sources */,
+				494FFCF1268A290700DD957B /* Clock.swift in Sources */,
 				494FFCDF268A276A00DD957B /* HourIndicators.swift in Sources */,
 				494FFD01268A3ADB00DD957B /* ClockHand.swift in Sources */,
 				499992A8268A51A800F0D49C /* FontProportional.swift in Sources */,

@@ -2,9 +2,9 @@
   "configurations" : [
     {
       "id" : "52E2A8F9-D70B-4962-B446-F3C14E64D05E",
-      "name" : "Configuration 1",
+      "name" : "en-GB",
       "options" : {
-
+        "language" : "en-GB"
       }
     }
   ],
@@ -13,7 +13,9 @@
       "containerPath" : "container:TellTheTime.xcodeproj",
       "identifier" : "494FFCC5268A244E00DD957B",
       "name" : "TellTheTime (macOS)"
-    }
+    },
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {

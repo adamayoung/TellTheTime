@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Tests (iOS)/TellTheTime (iOS).xctestplan"
+            reference = "container:Tests (iOS)/Unit Tests (iOS).xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

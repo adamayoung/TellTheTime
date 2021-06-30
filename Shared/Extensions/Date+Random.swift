@@ -2,12 +2,17 @@ import Foundation
 
 extension Date {
 
-    static func random() -> Date {
+    static func random(rounded: Bool) -> Date {
         let hour = Int.random(in: 1...12)
         let minute = Int.random(in: 0...59)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm"
-        return dateFormatter.date(from: "\(hour):\(minute)")!
+        let date = dateFormatter.date(from: "\(hour):\(minute)")!
+        if !rounded {
+            return date
+        }
+
+        return date.roundedToNearestFiveMinutes()
     }
 
     func roundedToNearestFiveMinutes() -> Date {
