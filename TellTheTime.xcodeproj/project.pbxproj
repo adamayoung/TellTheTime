@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		490A7645268BA1FA006EB93E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 490A7648268BA1FA006EB93E /* Localizable.strings */; };
 		490A7646268BA1FA006EB93E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 490A7648268BA1FA006EB93E /* Localizable.strings */; };
+		492C9F24268CA8C3004E8DC0 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 492C9F27268CA8C3004E8DC0 /* Localizable.stringsdict */; };
+		492C9F25268CA8C3004E8DC0 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 492C9F27268CA8C3004E8DC0 /* Localizable.stringsdict */; };
+		492C9F2D268CD5F4004E8DC0 /* DateClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C9F2C268CD5F4004E8DC0 /* DateClockTests.swift */; };
+		492C9F2E268CD5F4004E8DC0 /* DateClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C9F2C268CD5F4004E8DC0 /* DateClockTests.swift */; };
 		49370431268B05BC00FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370430268B05BC00FFD061 /* TellTheTimeTests.swift */; };
 		49370440268B098400FFD061 /* TellTheTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937043F268B098400FFD061 /* TellTheTimeTests.swift */; };
 		4937044A268B0B4A00FFD061 /* IOSAppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49370449268B0B4A00FFD061 /* IOSAppScene.swift */; };
@@ -94,6 +98,14 @@
 
 /* Begin PBXFileReference section */
 		490A7647268BA1FA006EB93E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		492C9F1D268C7D32004E8DC0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		492C9F1E268C7D32004E8DC0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		492C9F1F268CA5D8004E8DC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		492C9F20268CA5D8004E8DC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		492C9F26268CA8C3004E8DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		492C9F28268CA8C6004E8DC0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		492C9F29268CA8C8004E8DC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		492C9F2C268CD5F4004E8DC0 /* DateClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateClockTests.swift; sourceTree = "<group>"; };
 		4937042E268B05BC00FFD061 /* Tests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49370430268B05BC00FFD061 /* TellTheTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TellTheTimeTests.swift; sourceTree = "<group>"; };
 		49370432268B05BC00FFD061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,9 +191,26 @@
 			children = (
 				494FFCB9268A244E00DD957B /* Assets.xcassets */,
 				490A7648268BA1FA006EB93E /* Localizable.strings */,
+				492C9F27268CA8C3004E8DC0 /* Localizable.stringsdict */,
 				4963FA38268BB10F004ECCF8 /* InfoPlist.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		492C9F2A268CD5D6004E8DC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				498B782C268B268C006BD8B8 /* AppModelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		492C9F2B268CD5DC004E8DC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				492C9F2C268CD5F4004E8DC0 /* DateClockTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4937042F268B05BC00FFD061 /* Tests (iOS) */ = {
@@ -197,7 +226,8 @@
 		49370438268B08FB00FFD061 /* Tests Shared */ = {
 			isa = PBXGroup;
 			children = (
-				498B782C268B268C006BD8B8 /* AppModelTests.swift */,
+				492C9F2A268CD5D6004E8DC0 /* Model */,
+				492C9F2B268CD5DC004E8DC0 /* Extensions */,
 				498B782F268B26C7006BD8B8 /* Mocks */,
 			);
 			path = "Tests Shared";
@@ -492,6 +522,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
 			);
 			mainGroup = 494FFCB1268A244B00DD957B;
 			productRefGroup = 494FFCBF268A244E00DD957B /* Products */;
@@ -526,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				494FFCCE268A244E00DD957B /* Assets.xcassets in Resources */,
+				492C9F24268CA8C3004E8DC0 /* Localizable.stringsdict in Resources */,
 				4963FA35268BB10F004ECCF8 /* InfoPlist.strings in Resources */,
 				490A7645268BA1FA006EB93E /* Localizable.strings in Resources */,
 			);
@@ -536,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				494FFCCF268A244E00DD957B /* Assets.xcassets in Resources */,
+				492C9F25268CA8C3004E8DC0 /* Localizable.stringsdict in Resources */,
 				4963FA36268BB10F004ECCF8 /* InfoPlist.strings in Resources */,
 				490A7646268BA1FA006EB93E /* Localizable.strings in Resources */,
 			);
@@ -548,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492C9F2D268CD5F4004E8DC0 /* DateClockTests.swift in Sources */,
 				49370431268B05BC00FFD061 /* TellTheTimeTests.swift in Sources */,
 				498B782D268B268C006BD8B8 /* AppModelTests.swift in Sources */,
 				498B7832268B26E3006BD8B8 /* MockSpeechService.swift in Sources */,
@@ -558,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492C9F2E268CD5F4004E8DC0 /* DateClockTests.swift in Sources */,
 				49370440268B098400FFD061 /* TellTheTimeTests.swift in Sources */,
 				498B782E268B268C006BD8B8 /* AppModelTests.swift in Sources */,
 				498B7833268B26E3006BD8B8 /* MockSpeechService.swift in Sources */,
@@ -652,14 +688,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				490A7647268BA1FA006EB93E /* en */,
+				492C9F1D268C7D32004E8DC0 /* fr */,
+				492C9F1F268CA5D8004E8DC0 /* es */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		492C9F27268CA8C3004E8DC0 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492C9F26268CA8C3004E8DC0 /* en */,
+				492C9F28268CA8C6004E8DC0 /* fr */,
+				492C9F29268CA8C8004E8DC0 /* es */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 		4963FA38268BB10F004ECCF8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4963FA37268BB10F004ECCF8 /* en */,
+				492C9F1E268C7D32004E8DC0 /* fr */,
+				492C9F20268CA5D8004E8DC0 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -756,6 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -817,6 +868,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

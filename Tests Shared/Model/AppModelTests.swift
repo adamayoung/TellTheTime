@@ -56,7 +56,7 @@ class AppModelTests: XCTestCase {
     }
 
     func testSpeakDate() {
-        let expectedResult = model.date.utteranceText
+        let expectedResult = model.date.localizedString
 
         model.speakDate()
         let result = mockSpeechService.lastSayText

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>H_OCLOCK</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@HOUR@</string>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>It&apos;s %1$d o&apos;clock</string>
+		</dict>
+	</dict>
+	<key>M_MINUTES_PAST_H</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@MINUTE@</string>
+		<key>MINUTE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>It&apos;s 1 minute past %2$#@HOUR@</string>
+			<key>other</key>
+			<string>It&apos;s %1$d minutes past %2$#@HOUR@</string>
+		</dict>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%2$d</string>
+		</dict>
+	</dict>
+	<key>M_MINUTES_TO_H</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@MINUTE@</string>
+		<key>MINUTE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>It&apos;s 1 minute to %2$#@HOUR@</string>
+			<key>other</key>
+			<string>It&apos;s %1$d minutes to %2$#@HOUR@</string>
+		</dict>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%2$d</string>
+		</dict>
+	</dict>
+	<key>QUARTER_PAST_H</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@HOUR@</string>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>It&apos;s quarter past %1$d</string>
+		</dict>
+	</dict>
+	<key>QUARTER_TO_H</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@HOUR@</string>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>It&apos;s quarter to %1$d</string>
+		</dict>
+	</dict>
+	<key>HALF_PAST_H</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@HOUR@</string>
+		<key>HOUR</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>It&apos;s half past %1$d</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

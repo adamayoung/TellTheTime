@@ -26,7 +26,7 @@ final class AppModel: ObservableObject {
     }
 
     func speakDate() {
-        speechService.say(date.utteranceText)
+        speechService.say(date.localizedString)
     }
 
 }
